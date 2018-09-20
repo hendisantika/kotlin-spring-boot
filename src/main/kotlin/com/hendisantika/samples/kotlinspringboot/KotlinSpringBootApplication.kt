@@ -8,15 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
-open class KotlinSpringBootApplication {
+class KotlinSpringBootApplication {
 
 	@Bean
-	open fun init(repository: CustomerRepository) = CommandLineRunner {
-		repository.save(Customer("Jack", "Bauer"))
-		repository.save(Customer("Chloe", "O'Brian"))
-		repository.save(Customer("Kim", "Bauer"))
-		repository.save(Customer("David", "Palmer"))
-		repository.save(Customer("Michelle", "Dessler"))
+	fun init(repository: CustomerRepository) = CommandLineRunner {
+		repository.save(Customer("Hendi", "Santika"))
+		repository.save(Customer("Uzumaki", "Naruto"))
+		repository.save(Customer("Uchiha", "Sasuke"))
+		repository.save(Customer("Sakura", "Haruno"))
+		repository.save(Customer("Hatake", "Kakashi"))
 	}
 }
 
